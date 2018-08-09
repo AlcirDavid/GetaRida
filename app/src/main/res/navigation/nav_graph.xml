@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.getaride.android.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_newServiceAreaFragment"
+            app:destination="@id/newServiceAreaFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newServiceAreaFragment"
+        android:name="com.getaride.android.ui.newServiceArea.NewServiceAreaFragment"
+        android:label="NewServiceAreaFragment"
+        tools:layout="@layout/newservicearea_fragment">
+        <!--<argument-->
+            <!--android:name="user"-->
+            <!--app:argType="reference" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.getaride.android.ui.movies.MoviesFragment"
+        android:label="MoviesFragment"
+        tools:layout="@layout/newservicearea_fragment"/>
+</navigation>
