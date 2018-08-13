@@ -3,7 +3,6 @@
 app/src/release/google-services.json
 app/src/release/res/values/api_key_strings.xml
 app/libs/
-#app/app.iml
 
 # Keystore files
 # Comment the following line if you do want to check your keystore files in.
